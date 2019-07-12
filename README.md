@@ -13,10 +13,10 @@ This is the code I developed for analyzing the Boyer SQKD protocol as part of my
 5. Updated code so that parameters that we know should sum to 1 in reality do in the code. For Instance if P_{00}=0.25 then P_{01}=0.75. This gave higher key rates overall.
 6. Adding an option for error in the Q_a level as well. And generated corresponding resutls
 7. Re organized code to be in multiple packages divided based on function and moved code to Git hub.
-8. (Mostly done) determine all sets of dependent values. For instance P_{00} = 1 - P_{01} so we can sarfice the minimum bits in getting all of the statistics.  
+8. (Mostly done) determine all sets of dependent values. For instance P_{00} = 1 - P_{01} so we can sarfice the minimum bits in getting all of the statistics and what are expressions for them.
 ## Ongoing
 1. If our goal if to maximize the length of the final key, should Alice sends X basis qubits (more, same, less) than she sends Z basis qubits and likewise we would like to investigate biases how often Bob measures vs Reflect. 
-2. How many bits do we want sacrifice to get and estimate of parameter set i? 
+2. How many bits do we want sacrifice to get and estimate of parameter set i for each parameter set? 
 ### General questions
 1. How many qubits are we considering?
 *  What are the affects of sending more or less qubits.
