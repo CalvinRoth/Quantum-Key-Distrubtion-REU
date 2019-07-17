@@ -23,6 +23,7 @@ This is the code I developed for analyzing the Boyer SQKD protocol as part of my
 Table of what values we want to minimize and which we want to maximize. Observation, whether we want to maximize or minimize a statistic is independent of if Q_A = 2Q(1-Q) or Q=Q_A. Based on intuition I don't think this an actually interesting/surprising observation but more like we'd be concerned to some degree if it wasn't the case.
 
 1. All statistics
+
 | Statistic     | Add/Sub       |
 | ------------- |:-------------:|
 | p_{00}        | Add |
@@ -43,6 +44,7 @@ Table of what values we want to minimize and which we want to maximize. Observat
 | p_{1R1}       | Sub |
 
 2. No reflection statistics
+
 | Statistic     | Add/Sub       |
 | ------------- |:-------------:|
 | p_{00}        | Add |
@@ -63,6 +65,7 @@ Table of what values we want to minimize and which we want to maximize. Observat
 | p_{1R1}       | Sub |
 
 3. No P_{?ZX} measurements
+
 | Statistic     | Add/Sub       |
 | ------------- |:-------------:|
 | p_{00}        | Sub |
@@ -83,6 +86,7 @@ Table of what values we want to minimize and which we want to maximize. Observat
 | p_{1R1}       | Sub |
 
 4. Neither
+
 | Statistic     | Add/Sub       |
 | ------------- |:-------------:|
 | p_{00}        | Sub |
