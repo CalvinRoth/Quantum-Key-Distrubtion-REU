@@ -18,6 +18,91 @@ This is the code I developed for analyzing the Boyer SQKD protocol as part of my
 1. With A_z = Pr[Alice chooses to send a Z basis], B_ = Pr[Bob Measures], P_k[Key round not used for stats]. We want to re express the parameters in terms of these parameters. 
 2. Implement change in Code.
 3. Consider the effects of changing these three parameters on the final key length.
+
+##Notes
+Table of what values we want to minimize and which we want to maximize. Observation, whether we want to maximize or minimize a statistic is independent of if Q_A = 2Q(1-Q) or Q=Q_A. Based on intuition I don't think this an actually interesting/surprising observation but more like we'd be concerned to some degree if it wasn't the case.
+
+1. All statistics
+| Statistic     | Add/Sub       |
+| ------------- |:-------------:|
+| p_{00}        | Add |
+| p_{01}        | Add |
+| p_{10}        | Sub |
+| p_{11}        | Sub |
+| p_{a0}        | Sub |
+| p_{a1}        | Sub |
+| p_{00a}       | Sub |
+| p_{10a}       | Sub |
+| p_{01a}       | Sub |
+| p_{11a}       | Add |
+| p_{a0a}       | Add |
+| p_{a1a}       | Sub |
+| p_{0R0}       | Sub |
+| p_{0R1}       | Sub |
+| p_{1R0}       | Sub |
+| p_{1R1}       | Sub |
+
+2. No reflection statistics
+| Statistic     | Add/Sub       |
+| ------------- |:-------------:|
+| p_{00}        | Add |
+| p_{01}        | Add |
+| p_{10}        | Sub |
+| p_{11}        | Sub |
+| p_{a0}        | Sub |
+| p_{a1}        | Sub |
+| p_{00a}       | Sub |
+| p_{10a}       | Sub |
+| p_{01a}       | Sub |
+| p_{11a}       | Add |
+| p_{a0a}       | Add |
+| p_{a1a}       | Sub |
+| p_{0R0}       | Sub |
+| p_{0R1}       | Add |
+| p_{1R0}       | Add |
+| p_{1R1}       | Sub |
+
+3. No P_{?ZX} measurements
+| Statistic     | Add/Sub       |
+| ------------- |:-------------:|
+| p_{00}        | Sub |
+| p_{01}        | Sub |
+| p_{10}        | Sub |
+| p_{11}        | Sub |
+| p_{a0}        | Sub |
+| p_{a1}        | Sub |
+| p_{00a}       | Sub |
+| p_{10a}       | Sub |
+| p_{01a}       | Sub |
+| p_{11a}       | Sub |
+| p_{a0a}       | Sub |
+| p_{a1a}       | Sub |
+| p_{0R0}       | Sub |
+| p_{0R1}       | Sub |
+| p_{1R0}       | Sub |
+| p_{1R1}       | Sub |
+
+4. Neither
+| Statistic     | Add/Sub       |
+| ------------- |:-------------:|
+| p_{00}        | Sub |
+| p_{01}        | Sub |
+| p_{10}        | Sub |
+| p_{11}        | Sub |
+| p_{a0}        | Sub |
+| p_{a1}        | Sub |
+| p_{00a}       | Sub |
+| p_{10a}       | Sub |
+| p_{01a}       | Sub |
+| p_{11a}       | Sub |
+| p_{a0a}       | Sub |
+| p_{a1a}       | Sub |
+| p_{0R0}       | Sub |
+| p_{0R1}       | Add |
+| p_{1R0}       | Add |
+| p_{1R1}       | Sub |
+
+
 ### General questions
 1. How many qubits are we considering?
 	*  What are the affects of sending more or less qubits.
